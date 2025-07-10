@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+	<head>
+		<title> Afri Consult Tender Group </title>
+
+		<meta charset = "UTF-8" />
+		<meta name = "author" content = "Michael Chan" /> <!--date of creation; Wed, June 11, 2025-->
+		<meta http-equiv = "X-UA-Compatible" content = "IE=edge" />
+		<meta name = "viewport" content = "width=device-width,initial-scale=1,shrink-to-fit=no" />
+
+		<!--custom css-->
+		<link rel = "stylesheet" href = "css/style.css" />
+
+		<!--nav responsiveness css-->
+		<link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+		<!--tailwind for session messages-->
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+		<!--bootstrap css-->
+		<link href ="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+	</head>
+
+	<body style = "background-color: white; color: black;">
+		<!--header-->
+			<section class = "header-cover">
+				<div class = "container">
+					<header>
+						<input type = "checkbox" id = "check" />
+						<label for = "check" class = "checkbtn">
+							<i class = "fas fa-bars"></i>
+						</label>
+
+						<div class = "logo"> <a href = "index.html"> Afri Consult Tender Group </a> </div>
+
+						<div class = "navbar">
+							<a href = "index.html"> Home </a>
+							<a href = "about.html#about"> About </a>
+							<a href = "index.html#tenders"> Popular Tenders </a>
+							<a href = "index.html#east"> East Africa </a>
+							<a href = "index.html#team"> Meet the Team </a>
+							<a href = "index.html#activeTenders"> Active Tenders </a>
+							<a href = "index.html#contact"> Contact Us </a>
+						</div>
+					</header>
+				</div>
+			</section>
+		<!--header ends-->
+
+		<!--banner-->
+			<section class = "banner">
+				<div class = "container">
+					<br/> <br/> <br/> <br/> <br/>
+
+					<div class = "sub-section">
+						<h1 class = "sub-section-head">
+							<a href = "index.html#tenders"> Home </a>
+							<img src = "images/work/right.png" /> 
+							<span> Tenders </span>
+						</h1>
+					</div>
+				</div>
+			</section>
+		<!--banner ends-->
+
+		<!--about-->
+			<section class = "about" id = "tenders">
+				<div class = "container">
+					<a href = "index.html#tenders"> <img src = "images/work/back.png" id = "back" /> </a>
+
+					<h2 class = "section-title"> Garbage Management Tender </h2>
+
+					<p>
+
+					Many East African countries lack the necessary infrastructure, resources, skills, and expertise to manage the amount and complexity of waste being generated. Urbanization and increased consumption are driving a surge in waste production, with projections indicating a significant increase in waste volumes.
+
+					<br/> <br/>
+
+					Leveraging emerging technologies to improve waste collection, sorting, and processing.
+					There is constant need for new technologies used in waste management such as Garbage Trucks and Collection Vehicles, Incinerators, Industrial Hoppers, Compactors, Shredders and Crushers, Sorting Machines, Separators, Garbage tippers, Conveyors.
+
+					<br/> <br/>
+
+					Our group has good relationship with the regional county governments, contact us for business opportunities in this sector.
+
+					</p>
+				</div>
+			</section>
+		<!--about-->
+
+		<!--footer-->
+			<section class = "footer-cover">
+				<div class = "container">
+					<div class = "footer-container">
+						<div class = "footer-box">
+							<h2 class = "footer-title"> Locate Us </h2>
+
+							<p> Afri Consult Tender Group House </p>
+							<p> Riverside Drive, Nairobi </p>
+							<p> P.O.Box 001200 - GPO Nairobi </p>
+						</div>
+
+						<div class = "footer-box">
+							<h2 class = "footer-title"> Contact Us </h2>
+
+							<p> business@africonsulttendergroup.com </p>
+							<p> tenders@africonsulttendergroup.com </p>
+							<p> africonsult@gmail.com </p>
+						</div>
+					</div>
+
+					<hr style = "position: relative; color: white; z-index: 2;" />
+
+					<footer>
+						<p> &copy; Afri Consult Tender Group <span id = "year"></span> </p>
+					</footer>
+
+					<script>
+						document.getElementById("year").textContent = new Date().getFullYear();
+					</script>
+				</div>
+			</section>
+		<!--footer ends-->
+	</body>
+</html>

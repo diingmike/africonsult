@@ -1,0 +1,887 @@
+/*
+	Theme: Afri Consult Tender Group;
+	Author: Michael Chan;
+	Date of Creation: Wed, June 11, 2025;
+	Colors: Flat UI, British Palette; 
+*/
+
+/* all pages */
+	*
+	{
+		font-family: Verdana, sans-serif;
+		font-size: 13px;
+	}
+
+	html, body
+	{
+		scroll-behavior: smooth;
+		box-sizing: border-box;
+	}
+/* all pages end */
+
+/* header */
+	.header-cover
+	{
+		position: fixed;
+		width: 100%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 3;
+	}
+
+	header
+	{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	header .logo
+	{
+		padding: 30px 0;
+	}
+
+	header .logo a
+	{
+		text-decoration: none;
+		color: white;
+		text-transform: uppercase;
+	}
+
+	header .navbar a
+	{
+		text-decoration: none;
+		color: white;
+		margin-right: 50px;
+	}
+
+	header .navbar a:hover
+	{
+		border-bottom: 2px solid #20bf6b;
+	}
+
+	.checkbtn
+	{
+		color: white;
+		cursor: pointer;
+		display: none;
+	}
+
+	.checkbtn i
+	{
+		font-size: 30px;
+	}
+
+	#check
+	{
+		display: none;
+	}
+/* header ends */
+
+/* banner */
+	.banner
+	{
+		background-image: url("../images/banner.jpg");
+		background-size: cover;
+		background-position: center;
+		min-height: 100vh;
+		position: relative;
+	}
+
+	.home
+	{
+		text-align: center;
+		margin: 150px auto;
+		color: white;
+	}
+
+	.home h1
+	{
+		font-weight: 800;
+		font-size: 5rem;
+		text-transform: uppercase;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	}
+
+	.home ul li
+	{
+		font-weight: 800;
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	}
+
+	.home-list
+	{
+		list-style: none;
+		padding: 0;
+		margin: 0 auto;
+		max-width: 450px; /* optional: center the list and keep it neat */
+		text-align: left;
+	}
+
+	.home-list li 
+	{
+		background: url("../images/work/right.png") no-repeat left center;
+		background-size: 40px 40px;
+		padding-left: 50px; /* creates space for image */
+		margin-bottom: 15px;
+		font-weight: 800;
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		color: white;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	}
+/* banner ends */
+
+/* banner sub section */
+	.sub-section 
+	{
+		text-align: center;
+		margin: 150px auto;
+		color: white;
+	}
+
+	.sub-section .sub-section-head
+	{
+		display: inline-flex;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.sub-section .sub-section-head a
+	{
+		font-size: 5rem;
+		font-weight: 800;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: white;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+	}
+
+	.sub-section .sub-section-head a:hover
+	{
+		border-bottom: 5px solid #20bf6b;
+	}
+
+	.sub-section .sub-section-head span
+	{
+		font-size: 5rem;
+		font-weight: 800;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+	}
+/* banner sub section ends */
+
+/* about */
+	#about
+	{
+		scroll-margin-top: 90px;
+	}
+
+	.about
+	{
+		padding: 50px;
+	}
+
+	.section-title
+	{
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: 800;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+/* about ends */
+
+/* services */
+	.services
+	{
+		padding: 50px;
+		background-color: #f2f2f2;
+	}
+
+	.service-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 50px;
+	}
+
+	.service-box
+	{
+		display: flex;
+		align-items: center;
+	}
+/* services end */
+
+/* tenders */
+	#tenders
+	{
+		scroll-margin-top: 80px;
+	}
+
+	.tenders
+	{
+		padding: 50px;
+		background-color: #1cc8d2;
+		color: white;
+	}
+
+	.tender-container
+	{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 50px;
+	}
+
+	.tender-container a
+	{
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+	}
+
+	.tender-container a:hover
+	{
+		color: #1cc8d2;
+	}
+
+	.tender-box
+	{
+		background-color: white;
+		border-radius: 13px;
+		padding: 15px 15px;
+		text-align: center;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	.back
+	{
+		border-radius: 50%;
+		object-fit: cover;
+	}
+/* tenders end */
+
+/* categories */
+	.categories
+	{
+		padding: 50px;
+	}
+
+	.category-container
+	{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 50px;
+	}
+
+	.category-box
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	.category-box img
+	{
+		margin-right: 10px;
+	}
+/* categories end */
+
+/* east africa */
+	#east
+	{
+		scroll-margin-top: 80px;
+	}
+
+	.east-africa
+	{
+		padding: 50px;
+		background-image: url("../images/east-africa.jpg");
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		color: white;
+	}
+
+	.east-africa::before
+	{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.3);
+		z-index: 1;
+	}
+
+	.east-africa .container
+	{
+		position: relative;
+		z-index: 2;
+	}
+
+	.east-africa p
+	{
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+	}
+/* east africa ends */
+
+/* team */
+	#team
+	{
+		scroll-margin-top: 80px;
+	}
+
+	.team
+	{
+		padding: 50px;
+		background-color: #ececec;
+	}
+
+	.team-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 50px;
+	}
+
+	.team-box
+	{
+		width: 100%;
+	}
+
+	.team-box-img
+	{
+		width: 100%;
+	}
+
+	.team-box-img img
+	{
+		width: 100%;
+		height: 350px;
+		object-fit: cover;
+		border-radius: 13px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.team-box-desc
+	{
+		text-align: center;
+		padding: 20px 20px;
+	}
+
+	.team-box-desc .member-name
+	{
+		font-size: 15px;
+	}
+
+	.team-box-desc .member-title
+	{
+		background-color: #1cc8d2;
+		font-size: 15px;
+		border-radius: 5px;
+		padding: 5px 10px;
+		color: black;
+	}
+
+	.team-box-desc .member-email
+	{
+		color: #555;
+	}
+/* team ends */
+
+/* active tenders */
+	#activeTenders
+	{
+		scroll-margin-top: 80px;
+	}
+
+	.active-tenders
+	{
+		padding: 50px;
+	}
+
+	.active-tender-container
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 50px;
+	}
+
+	.active-title
+	{
+		font-size: 1.2rem;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+	.active-tender-box
+	{
+		border: 3px solid #1cc8d2;
+		border-radius: 13px;
+		padding: 20px 20px;
+	}
+
+	.active-tender-box ol
+	{
+		list-style-type: lower-alpha;
+	}
+/* active tenders end */
+
+/* footer */
+	#contact
+	{
+		scroll-margin-top: 80px;
+	}
+
+	.footer-cover
+	{
+		padding: 50px;
+		background-image: url("../images/banner.jpg");
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		color: white;
+		z-index: 0;
+	}
+
+	.footer-cover::before
+	{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 1;
+	}
+
+	.footer-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+		position: relative;
+	}
+
+	.footer-box
+	{
+		position: relative;
+		z-index: 2;
+	}
+
+	.footer-title
+	{
+		font-size: 1.5rem;
+		font-weight: 800;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+		margin-bottom: 20px;
+	}
+
+	footer
+	{
+		position: relative;
+		z-index: 2;
+	}
+
+	footer p
+	{
+		text-align: center;
+		padding: 10px;
+	}
+
+	.up
+	{
+		position: fixed;
+		width: 3%;
+		right: 0;
+		top: 80%;
+		margin-right: 30px;
+		height: 50px;
+		z-index: 4;
+	}
+/* footer ends */
+
+/* page responsiveness */
+	@media (max-width: 768px)
+	{
+		/* banner */
+			.home
+			{
+				margin: 100px auto;
+			}
+
+			.home h1
+			{
+				font-size: 3rem;
+			}
+
+			.home ul li
+			{
+				font-size: 1.2rem;
+			}
+
+			.home-list
+			{
+				max-width: 250px;
+			}
+		/* banner ends */
+
+		/* header */
+			.checkbtn
+			{
+				display: block;
+				order: 1;
+			}
+
+			header .navbar
+			{
+				position: fixed;
+				top: 120px;
+				right: -100%;
+				width: 30%;
+				height: 50vh;
+				display: flex;
+				flex-direction: column;
+				background-color: rgba(0, 0, 0, 0.7);
+				justify-content: center;
+				align-items: flex-end;
+				padding-right: 30px;
+			}
+
+			header .navbar a
+			{
+				margin: 10px 0;
+			}
+
+			#check:checked ~ .navbar
+			{
+				right: 0;
+			}
+		/* header ends */
+
+		/* services */
+			.services
+			{
+				padding: 30px;
+			}
+
+			.service-container
+			{
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 30px;
+			}
+
+			.service-box img
+			{
+				width: 50px;
+				height: 50px;
+				object-fit: cover;
+				margin-right: 10px;
+			}
+		/* services end */
+
+		/* tenders */
+			.tenders
+			{
+				padding: 30px;
+			}
+
+			.tender-container
+			{
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 30px;
+			}
+		/* tenders end */
+
+		/* categories */
+			.categories
+			{
+				padding: 30px;
+			}
+
+			.category-container
+			{
+				grid-gap: 30px;
+			}
+		/* categories end */
+
+		/* east africa */
+			.east-africa
+			{
+				padding: 30px;
+			}
+		/* east africa ends */
+
+		/* team */
+			.team
+			{
+				padding: 30px;
+			}
+
+			.team-container
+			{
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 50px;
+			}
+
+			.team-box-img img
+			{
+				height: 300px;
+			}
+		/* team ends */
+
+		/* active tenders */
+			.active-tenders
+			{
+				padding: 30px;
+			}
+
+			.active-tender-container
+			{
+				grid-gap: 30px;
+			}
+		/* active tenders end */
+
+		/* footer */
+			.footer-cover
+			{
+				padding: 30px;
+			}
+
+			.footer-container
+			{
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 30px;
+			}
+
+			.up
+			{
+				width: 6%;
+			}
+		/* footer ends */
+
+		/* about page */
+			#about
+			{
+				scroll-margin-top: 80px;
+			}
+		/* about page ends */
+	}
+
+	@media (max-width: 425px)
+	{
+		/* header */
+			.checkbtn
+			{
+				margin-right: 20px;
+			}
+
+			.checkbtn i
+			{
+				font-size: 25px;
+			}
+
+			header .navbar
+			{
+				width: 50%;
+			}
+		/* header ends */
+
+		/* banner sub section */
+			.sub-section 
+			{
+				margin: 100px auto;
+			}
+
+			.sub-section .sub-section-head
+			{
+				gap: 20px;
+			}
+
+			.sub-section .sub-section-head a
+			{
+				font-size: 3rem;
+				font-weight: 300;
+			}
+
+			.sub-section .sub-section-head a:hover
+			{
+				border-bottom: 3px solid #20bf6b;
+			}
+
+			.sub-section .sub-section-head span
+			{
+				font-size: 2.5rem;
+				font-weight: 300;
+			}
+		/* banner sub section ends */
+
+		/* services */
+			.services
+			{
+				padding: 20px;
+			}
+
+			.service-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 20px;
+			}
+		/* services end */
+
+		/* tenders */
+			.tenders
+			{
+				padding: 20px;
+			}
+
+			.tender-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 20px;
+			}
+
+			.back
+			{
+				height: 30px;
+				width: 30px;
+				border-radius: 50%;
+				object-fit: cover;
+				box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9);
+			}
+		/* tenders end */
+
+		/* categories */
+			.categories
+			{
+				padding: 20px;
+			}
+
+			.category-container
+			{
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 20px;
+			}
+		/* categories end */
+
+		/* east africa */
+			.east-africa
+			{
+				padding: 20px;
+			}
+		/* east africa ends */
+
+		/* team */
+			.team
+			{
+				padding: 20px;
+			}
+
+			.team-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 20px;
+			}
+
+			.team-box-img img
+			{
+				height: 300px;
+			}
+		/* team ends */
+
+		/* active tenders */
+			.active-tenders
+			{
+				padding: 20px;
+			}
+
+			.active-tender-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 20px;
+			}
+		/* active tenders end */
+
+		/* footer */
+			.footer-cover
+			{
+				padding: 20px;
+			}
+
+			.footer-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 20px;
+			}
+
+			.up
+			{
+				width: 11%;
+			}
+		/* footer ends */
+
+		/* about page */
+			.about
+			{
+				padding: 20px;
+			}
+		/* about page ends */
+	}
+
+	@media (max-width: 320px)
+	{
+		/* banner sub section */
+			.sub-section .sub-section-head
+			{
+				gap: 10px;
+			}
+
+			.sub-section .sub-section-head a
+			{
+				font-size: 2rem;
+				font-weight: 800;
+			}
+
+			.sub-section .sub-section-head a:hover
+			{
+				border-bottom: 3px solid #20bf6b;
+			}
+
+			.sub-section .sub-section-head span
+			{
+				font-size: 2rem;
+				font-weight: 800;
+			}
+		/* banner sub section ends */
+
+		/* tenders */
+			.back
+			{
+				height: 20px;
+				width: 20px;
+				border-radius: 50%;
+				object-fit: cover;
+				box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9);
+			}
+		/* tenders end */
+
+		/* categories */
+			.category-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+			}
+		/* categories end */
+
+		/* footer */
+			.up
+			{
+				width: 14%;
+			}
+		/* footer ends */
+	}
+/* page responsiveness ends */
