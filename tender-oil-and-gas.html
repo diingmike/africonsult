@@ -32,11 +32,11 @@
 							<i class = "fas fa-bars"></i>
 						</label>
 
-						<div class = "logo"> <a href = "index.html"> Afri Consult Tender Group </a> </div>
+						<div class = "logo"> <a href = "index.html"> <img src = "images/logo-4.png" /> </a> </div>
 
 						<div class = "navbar">
 							<a href = "index.html"> Home </a>
-							<a href = "about.html#about"> About </a>
+							<a href = "about.html"> About </a>
 							<a href = "index.html#tenders"> Popular Tenders </a>
 							<a href = "index.html#east"> East Africa </a>
 							<a href = "index.html#team"> Meet the Team </a>
@@ -48,26 +48,10 @@
 			</section>
 		<!--header ends-->
 
-		<!--banner-->
-			<section class = "banner">
+		<!--tender-->
+			<section class = "about">
 				<div class = "container">
-					<br/> <br/> <br/> <br/> <br/>
-
-					<div class = "sub-section">
-						<h1 class = "sub-section-head">
-							<a href = "index.html#tenders"> Home </a>
-							<img src = "images/work/right.png" /> 
-							<span> Tenders </span>
-						</h1>
-					</div>
-				</div>
-			</section>
-		<!--banner ends-->
-
-		<!--about-->
-			<section class = "about" id = "tenders">
-				<div class = "container">
-					<a href = "index.html#tenders"> <img src = "images/work/back.png" id = "back" /> </a>
+					<a href = "index.html#tenders"> <img src = "images/work/back.png" class = "back" /> </a>
 
 					<h2 class = "section-title"> Oil & Gas Tender </h2>
 
@@ -90,10 +74,10 @@
 					</p>
 				</div>
 			</section>
-		<!--about-->
+		<!--tender ends-->
 
 		<!--footer-->
-			<section class = "footer-cover">
+			<section class = "footer-cover" id = "contact">
 				<div class = "container">
 					<div class = "footer-container">
 						<div class = "footer-box">
@@ -111,7 +95,13 @@
 							<p> tenders@africonsulttendergroup.com </p>
 							<p> africonsult@gmail.com </p>
 						</div>
+
+						<div class = "footer-box">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8387528343537!2d36.79095937473643!3d-1.269659135607686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1744d1f496ef%3A0xa2a048835be09d59!2sRiverside%20Dr%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1753818464021!5m2!1sen!2ske" width="400" height="250" style="border:0; border-radius: 13px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
 					</div>
+
+					<a href = "#"> <img src = "images/work/go-up.png" class = "up" /> </a>
 
 					<hr style = "position: relative; color: white; z-index: 2;" />
 
@@ -125,5 +115,16 @@
 				</div>
 			</section>
 		<!--footer ends-->
+
+		<!--javascript-->
+			<script>
+			  const hamburger = document.getElementById('hamburger');
+			  const navbar = document.getElementById('navbar');
+
+			  hamburger.addEventListener('click', () => {
+			    navbar.classList.toggle('active');
+			  });
+			</script>
+		<!--javascript ends-->
 	</body>
 </html>
