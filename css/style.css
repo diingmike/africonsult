@@ -23,10 +23,10 @@
 	.header-cover
 	{
 		position: fixed;
-		width: 100%;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		background-color: rgba(0, 0, 0, 0.5);
-		z-index: 3;
+		background-color: rgba(0, 0, 0, 0.5); /* #005a5c */
+		width: 100%;
+		color: white;
 	}
 
 	header
@@ -36,16 +36,11 @@
 		justify-content: space-between;
 	}
 
-	header .logo
+	header .logo img
 	{
-		padding: 30px 0;
-	}
-
-	header .logo a
-	{
-		text-decoration: none;
-		color: white;
-		text-transform: uppercase;
+		height: 84px;
+		width: 134px;
+		object-fit: cover;
 	}
 
 	header .navbar a
@@ -53,11 +48,12 @@
 		text-decoration: none;
 		color: white;
 		margin-right: 50px;
+		font-weight: 500;
 	}
 
 	header .navbar a:hover
 	{
-		border-bottom: 2px solid #20bf6b;
+		border-bottom: 3px solid white;
 	}
 
 	.checkbtn
@@ -78,110 +74,46 @@
 	}
 /* header ends */
 
-/* banner */
-	.banner
-	{
-		background-image: url("../images/banner.jpg");
-		background-size: cover;
-		background-position: center;
-		min-height: 100vh;
-		position: relative;
-	}
-
-	.home
-	{
-		text-align: center;
-		margin: 150px auto;
-		color: white;
-	}
-
-	.home h1
-	{
-		font-weight: 800;
-		font-size: 5rem;
-		text-transform: uppercase;
-		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-	}
-
-	.home ul li
-	{
-		font-weight: 800;
-		font-size: 2.5rem;
-		text-transform: uppercase;
-		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-	}
-
-	.home-list
-	{
-		list-style: none;
-		padding: 0;
-		margin: 0 auto;
-		max-width: 450px; /* optional: center the list and keep it neat */
-		text-align: left;
-	}
-
-	.home-list li 
-	{
-		background: url("../images/work/right.png") no-repeat left center;
-		background-size: 40px 40px;
-		padding-left: 50px; /* creates space for image */
-		margin-bottom: 15px;
-		font-weight: 800;
-		font-size: 2.5rem;
-		text-transform: uppercase;
-		color: white;
-		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-	}
-/* banner ends */
-
-/* banner sub section */
-	.sub-section 
-	{
-		text-align: center;
-		margin: 150px auto;
-		color: white;
-	}
-
-	.sub-section .sub-section-head
-	{
-		display: inline-flex;
-		align-items: center;
-		gap: 30px;
-	}
-
-	.sub-section .sub-section-head a
-	{
-		font-size: 5rem;
-		font-weight: 800;
-		text-transform: uppercase;
-		text-decoration: none;
-		color: white;
-		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-	}
-
-	.sub-section .sub-section-head a:hover
-	{
-		border-bottom: 5px solid #20bf6b;
-	}
-
-	.sub-section .sub-section-head span
-	{
-		font-size: 5rem;
-		font-weight: 800;
-		text-transform: uppercase;
-		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-	}
-/* banner sub section ends */
-
-/* about */
-	#about
-	{
-		scroll-margin-top: 90px;
-	}
-
-	.about
+/* reviews */
+	.reviews
 	{
 		padding: 50px;
+		background-color: #005a5c;
+		color: white;
+	}
+
+	.reviews .container
+	{
+		margin-top: 100px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 50px;
+	}
+
+	.review-box
+	{
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.review-box span
+	{
+		font-size: 2.5rem;
+		font-weight: 800;
+	}
+
+	.review-box .review-text
+	{
+		font-size: 1.5rem;
+	}
+/* reviews end */
+
+/* services */
+	.services
+	{
+		padding: 50px;
+		background-color: #f2f2f2;
 	}
 
 	.section-title
@@ -191,14 +123,6 @@
 		font-weight: 800;
 		text-transform: uppercase;
 		margin-bottom: 20px;
-	}
-/* about ends */
-
-/* services */
-	.services
-	{
-		padding: 50px;
-		background-color: #f2f2f2;
 	}
 
 	.service-container
@@ -224,7 +148,7 @@
 	.tenders
 	{
 		padding: 50px;
-		background-color: #1cc8d2;
+		background-color: #005a5c; 
 		color: white;
 	}
 
@@ -239,12 +163,11 @@
 	{
 		text-decoration: none;
 		color: black;
-		font-weight: bold;
 	}
 
 	.tender-container a:hover
 	{
-		color: #1cc8d2;
+		color: #005a5c;
 	}
 
 	.tender-box
@@ -254,12 +177,6 @@
 		padding: 15px 15px;
 		text-align: center;
 		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-	}
-
-	.back
-	{
-		border-radius: 50%;
-		object-fit: cover;
 	}
 /* tenders end */
 
@@ -280,11 +197,12 @@
 	{
 		display: flex;
 		align-items: center;
+		gap: 10px;
 	}
 
-	.category-box img
+	.category-box p
 	{
-		margin-right: 10px;
+		margin-top: 10px;
 	}
 /* categories end */
 
@@ -297,34 +215,13 @@
 	.east-africa
 	{
 		padding: 50px;
-		background-image: url("../images/east-africa.jpg");
-		background-size: cover;
-		background-position: center;
-		position: relative;
+		background-color: #005a5c;
 		color: white;
-	}
-
-	.east-africa::before
-	{
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.3);
-		z-index: 1;
-	}
-
-	.east-africa .container
-	{
-		position: relative;
-		z-index: 2;
 	}
 
 	.east-africa p
 	{
-		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 	}
 /* east africa ends */
 
@@ -379,11 +276,11 @@
 
 	.team-box-desc .member-title
 	{
-		background-color: #1cc8d2;
+		background-color: #005a5c;
 		font-size: 15px;
 		border-radius: 5px;
 		padding: 5px 10px;
-		color: black;
+		color: white;
 	}
 
 	.team-box-desc .member-email
@@ -419,7 +316,7 @@
 
 	.active-tender-box
 	{
-		border: 3px solid #1cc8d2;
+		border: 3px solid #005a5c;
 		border-radius: 13px;
 		padding: 20px 20px;
 	}
@@ -439,38 +336,20 @@
 	.footer-cover
 	{
 		padding: 50px;
-		background-image: url("../images/banner.jpg");
-		background-size: cover;
-		background-position: center;
-		position: relative;
+		background-color: #005a5c;
 		color: white;
-		z-index: 0;
-	}
-
-	.footer-cover::before
-	{
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.5);
-		z-index: 1;
 	}
 
 	.footer-container
 	{
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 20px;
-		position: relative;
+		grid-gap: 50px;
 	}
 
-	.footer-box
+	.footer-box p
 	{
-		position: relative;
-		z-index: 2;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 	}
 
 	.footer-title
@@ -482,55 +361,55 @@
 		margin-bottom: 20px;
 	}
 
-	footer
-	{
-		position: relative;
-		z-index: 2;
-	}
-
 	footer p
 	{
 		text-align: center;
 		padding: 10px;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 	}
 
 	.up
 	{
 		position: fixed;
-		width: 3%;
+		width: 50px;
+		border-radius: 50%;
 		right: 0;
 		top: 80%;
 		margin-right: 30px;
 		height: 50px;
 		z-index: 4;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+	}
+
+	.footer-box iframe
+	{
+		width: 400px;
+		height: 200px;
 	}
 /* footer ends */
+
+/* about page */
+	.about
+	{
+		padding: 50px;
+	}
+
+	.about .container .back
+	{
+		margin-top: 60px;
+	}
+
+	.back
+	{
+		border-radius: 50%;
+		object-fit: cover;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+	}
+/* about page ends */
 
 /* page responsiveness */
 	@media (max-width: 768px)
 	{
-		/* banner */
-			.home
-			{
-				margin: 100px auto;
-			}
-
-			.home h1
-			{
-				font-size: 3rem;
-			}
-
-			.home ul li
-			{
-				font-size: 1.2rem;
-			}
-
-			.home-list
-			{
-				max-width: 250px;
-			}
-		/* banner ends */
-
 		/* header */
 			.checkbtn
 			{
@@ -547,7 +426,7 @@
 				height: 50vh;
 				display: flex;
 				flex-direction: column;
-				background-color: rgba(0, 0, 0, 0.7);
+				background-color: rgba(0, 0, 0, 0.5);
 				justify-content: center;
 				align-items: flex-end;
 				padding-right: 30px;
@@ -564,16 +443,49 @@
 			}
 		/* header ends */
 
+		/* reviews */
+			.reviews
+			{
+				padding: 20px;
+			}
+
+			.reviews .container
+			{
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 20px;
+			}
+
+			.review-box span
+			{
+				font-size: 2rem;
+				font-weight: 500;
+			}
+
+			.review-box .review-text
+			{
+				font-size: 1rem;
+			}
+		/* reviews end */
+
 		/* services */
 			.services
 			{
-				padding: 30px;
+				padding: 20px;
+			}
+
+			.section-title
+			{
+				text-align: center;
+				font-size: 1.5rem;
+				font-weight: 500;
+				text-transform: uppercase;
+				margin-bottom: 20px;
 			}
 
 			.service-container
 			{
 				grid-template-columns: repeat(2, 1fr);
-				grid-gap: 30px;
+				grid-gap: 20px;
 			}
 
 			.service-box img
@@ -581,94 +493,101 @@
 				width: 50px;
 				height: 50px;
 				object-fit: cover;
-				margin-right: 10px;
 			}
 		/* services end */
 
 		/* tenders */
 			.tenders
 			{
-				padding: 30px;
+				padding: 20px;
 			}
 
 			.tender-container
 			{
 				grid-template-columns: repeat(3, 1fr);
-				grid-gap: 30px;
+				grid-gap: 20px;
 			}
 		/* tenders end */
 
 		/* categories */
 			.categories
 			{
-				padding: 30px;
+				padding: 20px;
 			}
 
 			.category-container
 			{
-				grid-gap: 30px;
+				grid-template-columns: repeat(4, 1fr);
+				grid-gap: 20px;
 			}
 		/* categories end */
 
 		/* east africa */
 			.east-africa
 			{
-				padding: 30px;
+				padding: 20px;
 			}
 		/* east africa ends */
 
 		/* team */
 			.team
 			{
-				padding: 30px;
+				padding: 20px;
 			}
 
 			.team-container
 			{
 				grid-template-columns: repeat(2, 1fr);
-				grid-gap: 50px;
-			}
-
-			.team-box-img img
-			{
-				height: 300px;
+				grid-gap: 20px;
 			}
 		/* team ends */
 
 		/* active tenders */
 			.active-tenders
 			{
-				padding: 30px;
+				padding: 20px;
 			}
 
 			.active-tender-container
 			{
-				grid-gap: 30px;
+				grid-gap: 20px;
 			}
 		/* active tenders end */
 
 		/* footer */
 			.footer-cover
 			{
-				padding: 30px;
+				padding: 20px;
 			}
 
 			.footer-container
 			{
 				grid-template-columns: repeat(2, 1fr);
-				grid-gap: 30px;
+				grid-gap: 20px;
 			}
 
-			.up
+			.footer-box iframe
 			{
-				width: 6%;
+				width: 300px;
+				height: 200px;
 			}
 		/* footer ends */
 
 		/* about page */
-			#about
+			.about
 			{
-				scroll-margin-top: 80px;
+				padding: 20px;
+			}
+
+			.about .container .back
+			{
+				margin-top: 75px;
+			}
+
+			.back
+			{
+				height: 35px;
+				width: 35px;
 			}
 		/* about page ends */
 	}
@@ -692,100 +611,38 @@
 			}
 		/* header ends */
 
-		/* banner sub section */
-			.sub-section 
+		/* reviews */
+			.reviews .container
 			{
-				margin: 100px auto;
+				grid-template-columns: repeat(1, 1fr);
 			}
-
-			.sub-section .sub-section-head
-			{
-				gap: 20px;
-			}
-
-			.sub-section .sub-section-head a
-			{
-				font-size: 3rem;
-				font-weight: 300;
-			}
-
-			.sub-section .sub-section-head a:hover
-			{
-				border-bottom: 3px solid #20bf6b;
-			}
-
-			.sub-section .sub-section-head span
-			{
-				font-size: 2.5rem;
-				font-weight: 300;
-			}
-		/* banner sub section ends */
+		/* reviews end */
 
 		/* services */
-			.services
-			{
-				padding: 20px;
-			}
-
 			.service-container
 			{
 				grid-template-columns: repeat(1, 1fr);
-				grid-gap: 20px;
 			}
 		/* services end */
 
 		/* tenders */
-			.tenders
-			{
-				padding: 20px;
-			}
-
 			.tender-container
 			{
 				grid-template-columns: repeat(1, 1fr);
-				grid-gap: 20px;
-			}
-
-			.back
-			{
-				height: 30px;
-				width: 30px;
-				border-radius: 50%;
-				object-fit: cover;
-				box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9);
 			}
 		/* tenders end */
 
 		/* categories */
-			.categories
-			{
-				padding: 20px;
-			}
-
 			.category-container
 			{
 				grid-template-columns: repeat(2, 1fr);
-				grid-gap: 20px;
 			}
 		/* categories end */
 
-		/* east africa */
-			.east-africa
-			{
-				padding: 20px;
-			}
-		/* east africa ends */
-
 		/* team */
-			.team
-			{
-				padding: 20px;
-			}
-
 			.team-container
 			{
 				grid-template-columns: repeat(1, 1fr);
-				grid-gap: 20px;
 			}
 
 			.team-box-img img
@@ -795,81 +652,34 @@
 		/* team ends */
 
 		/* active tenders */
-			.active-tenders
-			{
-				padding: 20px;
-			}
-
 			.active-tender-container
 			{
 				grid-template-columns: repeat(1, 1fr);
-				grid-gap: 20px;
 			}
 		/* active tenders end */
 
 		/* footer */
-			.footer-cover
-			{
-				padding: 20px;
-			}
-
 			.footer-container
 			{
 				grid-template-columns: repeat(1, 1fr);
-				grid-gap: 20px;
+			}
+
+			.footer-box iframe
+			{
+				width: 350px;
+				height: 200px;
 			}
 
 			.up
 			{
-				width: 11%;
+				width: 35px;
+				height: 35px;
 			}
 		/* footer ends */
-
-		/* about page */
-			.about
-			{
-				padding: 20px;
-			}
-		/* about page ends */
 	}
 
 	@media (max-width: 320px)
 	{
-		/* banner sub section */
-			.sub-section .sub-section-head
-			{
-				gap: 10px;
-			}
-
-			.sub-section .sub-section-head a
-			{
-				font-size: 2rem;
-				font-weight: 800;
-			}
-
-			.sub-section .sub-section-head a:hover
-			{
-				border-bottom: 3px solid #20bf6b;
-			}
-
-			.sub-section .sub-section-head span
-			{
-				font-size: 2rem;
-				font-weight: 800;
-			}
-		/* banner sub section ends */
-
-		/* tenders */
-			.back
-			{
-				height: 20px;
-				width: 20px;
-				border-radius: 50%;
-				object-fit: cover;
-				box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9);
-			}
-		/* tenders end */
-
 		/* categories */
 			.category-container
 			{
@@ -878,9 +688,10 @@
 		/* categories end */
 
 		/* footer */
-			.up
+			.footer-box iframe
 			{
-				width: 14%;
+				width: 250px;
+				height: 200px;
 			}
 		/* footer ends */
 	}
