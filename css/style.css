@@ -666,7 +666,7 @@
 
 			.footer-box iframe
 			{
-				width: 350px;
+				width: 250px;
 				height: 200px;
 			}
 
@@ -686,13 +686,5 @@
 				grid-template-columns: repeat(1, 1fr);
 			}
 		/* categories end */
-
-		/* footer */
-			.footer-box iframe
-			{
-				width: 250px;
-				height: 200px;
-			}
-		/* footer ends */
 	}
 /* page responsiveness ends */
