@@ -11,138 +11,137 @@
         <link rel = "stylesheet" href = "css/style.css" />
 
         <!--font awesome for icons-->
-        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-        <!--google font-->
+        <!--google font, Inter-->
         <link rel = "preconnect" href = "https://fonts.googleapis.com" />
-        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
-        <link href = "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel = "stylesheet" />
+        <link rel = "preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href = "https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel = "stylesheet" />
     </head>
 
     <body>
         <!--header-->
-            <section class = "header">
-                <div class = "container">
-                    <header>
-                        <input type = "checkbox" id = "check">
-                        <label for = "check" class = "checkbtn">
-                            <i class = "fas fa-bars checkbtn-icon"></i>
-                        </label>
+        <header class = "header">
+            <div class = "container">
 
-                        <a href = "index.html">
-                            <div class = "logo">
-                                <img src = "images/logo-2.png" alt = "logo" />
-
-                                <div class = "logo-text">
-                                    <h1> ACT GROUP </h1>
-                                    <h1> CONSULTING </h1>
-                                </div>
-                            </div>
-                        </a>
-
-                        <div class = "navbar">
-                            <a href = "index.html"> HOME </a>
-                            <a href = "about.html"> ABOUT US </a>
-                            <a href = "index.html#team"> TEAM </a>
-                            <a href = "index.html#activeTenders"> ACTIVE TENDERS </a>
-                            <a href = "contact.html"> CONTACT US </a>
-                        </div>
-                    </header>
+                <!--hamburger-->
+                <input type = "checkbox" id = "check" />
+                <label for = "check" class = "checkbtn" aria-label = "Toggle navigation">
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                </label>
+                
+                <!--logo-->
+                <div class = "logo">
+                    <img src = "images/logo-2.png" alt = "ACT Group logo" />
+                    <a href = "index.html" class = "logo_wordmark">
+                        <span class = "logo_name"> ACT Group </span>
+                        <span class = "logo_sub"> Consulting </span>
+                    </a>
                 </div>
-            </section>
+
+                <!--menu-->
+                <nav class = "menu">
+                    <a href = "index.html"               class = "nav_link"> Home </a>
+                    <a href = "about.html"               class = "nav_link active"> About Us </a>
+                    <a href = "index.html#team"          class = "nav_link"> Team </a>
+                    <a href = "index.html#activeTenders" class = "nav_link"> Active Tenders </a>
+                    <a href = "contact.html"             class = "nav_cta"> Contact Us </a>
+                </nav>
+                
+            </div>
+        </header>
         <!--header ends-->
 
         <!--tender-->
-            <section class = "tender-page">
-                <div class = "container">
-                    <a href = "index.html#tenders" class = "back-btn"> Back </a>
-                    <h1 class = "page-title"> AGRICULTURAL TENDER </h1>
+        <section class = "tender-page">
+            <div class = "container">
 
-                    <p>
+                <a href = "index.html#tenders" class = "back-btn"> Back to Tenders </a>
 
-                    The African agricultural sector is vital, contributing significantly to the continent's GDP and providing livelihoods for a large portion of the population. However, it also faces challenges like low productivity, dependence on subsistence farming, and increasing food insecurity due to climate change. To address these issues, there's a growing focus on modernizing agriculture, improving access to finance, and building resilience to climate change.
-
-                    <br/> <br/>
-
-                    With our partners, we employ use technology, modern equipment, fertilizers and agro chemicals, farm inputs machinery and innovation for improving agricultural productivity and building resilience.
-
-                    </p>
+                <!--hero-->
+                <div class = "tender-hero">
+                    <p class = "tender-hero-label"> Sector Overview </p>
+                    <h1 class = "page-title"> Agricultural Tender </h1>
                 </div>
-            </section>
+
+                <!--content cards-->
+                <div class = "tender-body">
+
+                    <div class = "tender-card">
+                        <div class = "tender-card-icon"> <i class = "fas fa-seedling"></i> </div>
+                        <h3> Sector Importance </h3>
+                        <p>
+                            Africa's agricultural sector contributes significantly to the continent's GDP and provides livelihoods for a large portion of the population — making it a cornerstone of economic stability and food security across the region.
+                        </p>
+                    </div>
+
+                    <div class = "tender-card">
+                        <div class = "tender-card-icon"> <i class = "fas fa-cloud-rain"></i> </div>
+                        <h3> Key Challenges </h3>
+                        <p>
+                            The sector faces persistent challenges including low productivity, heavy dependence on subsistence farming, and rising food insecurity driven by climate change — all of which demand urgent structural and technological responses.
+                        </p>
+                    </div>
+
+                    <div class = "tender-card">
+                        <div class = "tender-card-icon"> <i class = "fas fa-tractor"></i> </div>
+                        <h3> Modernisation Drive </h3>
+                        <p> 
+                            There is a growing continental focus on modernising agriculture through improved access to finance, adoption of modern equipment, quality fertilizers, agro-chemicals, and farm machinery to boost yields and reduce dependency on rain-fed farming.
+                        </p>
+                    </div>
+
+                    <div class = "tender-card">
+                        <div class = "tender-card-icon"> <i class = "fas fa-microchip"></i> </div>
+                        <h3> Technology & Innovation </h3>
+                        <p>
+                            Working with our partners, we leverage technology and innovation to improve agricultural productivity and build long-term climate resilience — connecting suppliers of smart farming solutions with procurement opportunities across East Africa.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!--CTA-->
+                <div class = "tender-cta">
+                    <p>
+                        Contact us for the latest agricultural tenders and procurement bid invitations — <strong>farm machinery, fertilizers, agro-chemicals, irrigation systems, farm inputs</strong>, and related agricultural equipment across East Africa.
+                    </p>
+                    <a href = "contact.html"> 
+                        <i class = "fas fa-paper-plane"></i>
+                        Get In Touch
+                    </a>
+                </div>
+
+            </div>
+        </section>
         <!--tender ends-->
 
         <!--footer-->
-            <section class = "footer">
-                <div class = "container">
-                    <div class = "footer-container">
-                        <div class = "footer-box">
-                            <h2 class = "footer-title"> LOCATE US </h2>
-
-                            <p> Afri Consult Tender Group House </p>
-                            <p> Riverside Drive, Nairobi </p>
-                            <p> P.O.Box 001200 - GPO Nairobi </p>
-                        </div>
-
-                        <div class = "footer-box">
-                            <h2 class = "footer-title"> CONTACT US </h2>
-
-                            <p> business@africonsulttendergroup.com </p>
-                            <p> tenders@africonsulttendergroup.com </p>
-                            <p> africonsult@gmail.com </p>
-                        </div>
-
-                        <div class = "footer-box">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8387528343537!2d36.79095937473643!3d-1.269659135607686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1744d1f496ef%3A0xa2a048835be09d59!2sRiverside%20Dr%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1753818464021!5m2!1sen!2ske" style="border:0; border-radius: 13px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+        <section class = "footer">
+            <div class = "container">
+                <div class = "footer-bottom">
+                    <p> &copy; Africonsult Tender Group, <span id = "year"></span> </p>
+              
+                    <div class = "footer-links">
+                        <a href = "index.html"> Home </a>
+                        <a href = "about.html"> About </a>
+                        <a href = "contact.html"> Contact </a>
                     </div>
-
-                    <a href = "javascript:void(0)" onclick = "scrollToTop()"> 
-                        <img src = "images/work/go-up.png" class = "go-up" alt = "go up" /> 
-                    </a>
-
-                    <hr />
-
-                    <footer>
-                        <p style = "margin-top: 10px"> &copy; AFRICONSULT TENDER GROUP , <span id = "year"></span> </p>
-                    </footer>
                 </div>
-            </section>
+            </div>
+        </section>
         <!--footer ends-->
 
+        <!--go-up button-->
+        <button class = "go-up" onclick = "scrollToTop()" aria-label = "Back to top">
+            <i class = "fas fa-arrow-up"></i>
+        </button> 
+
         <!--javascript-->
-            <script>
-                // Go up button reference
-                const goUpBtn = document.querySelector(".go-up");
-
-                // Show button when scrolled down 300px
-                window.addEventListener("scroll", () => 
-                {
-                    if (window.scrollY > 300) 
-                    {
-                        goUpBtn.style.display = "block";
-                    } 
-                    else 
-                    {
-                        goUpBtn.style.display = "none";
-                    }
-                });
-
-                // Script for go up button
-                function scrollToTop() 
-                {
-                    window.scrollTo
-                    ({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                }
-
-                // script to get to section
-                const smoothScrollLinks = document.querySelectorAll('.smooth-scroll[data-target]');
-
-                // script for year
-                document.getElementById("year").textContent = new Date().getFullYear();
-            </script>
+        <script src = "js/script.js"></script>
         <!--javascript ends-->
+
     </body>
 </html>

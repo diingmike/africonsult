@@ -11,155 +11,137 @@
         <link rel = "stylesheet" href = "css/style.css" />
 
         <!--font awesome for icons-->
-        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-        <!--google font-->
+        <!--google font, Inter-->
         <link rel = "preconnect" href = "https://fonts.googleapis.com" />
-        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
-        <link href = "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel = "stylesheet" />
+        <link rel = "preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href = "https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel = "stylesheet" />
     </head>
 
     <body>
         <!--header-->
-            <section class = "header">
-                <div class = "container">
-                    <header>
-                        <input type = "checkbox" id = "check">
-                        <label for = "check" class = "checkbtn">
-                            <i class = "fas fa-bars checkbtn-icon"></i>
-                        </label>
+        <header class = "header">
+            <div class = "container">
 
-                        <a href = "index.html">
-                            <div class = "logo">
-                                <img src = "images/logo-2.png" alt = "logo" />
-
-                                <div class = "logo-text">
-                                    <h1> ACT GROUP </h1>
-                                    <h1> CONSULTING </h1>
-                                </div>
-                            </div>
-                        </a>
-
-                        <div class = "navbar">
-                            <a href = "index.html"> HOME </a>
-                            <a href = "about.html"> ABOUT US </a>
-                            <a href = "index.html#team"> TEAM </a>
-                            <a href = "index.html#activeTenders"> ACTIVE TENDERS </a>
-                            <a href = "contact.html"> CONTACT US </a>
-                        </div>
-                    </header>
+                <!--hamburger-->
+                <input type = "checkbox" id = "check" />
+                <label for = "check" class = "checkbtn" aria-label = "Toggle navigation">
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                </label>
+                
+                <!--logo-->
+                <div class = "logo">
+                    <img src = "images/logo-2.png" alt = "ACT Group logo" />
+                    <a href = "index.html" class = "logo_wordmark">
+                        <span class = "logo_name"> ACT Group </span>
+                        <span class = "logo_sub"> Consulting </span>
+                    </a>
                 </div>
-            </section>
+
+                <!--menu-->
+                <nav class = "menu">
+                    <a href = "index.html"               class = "nav_link"> Home </a>
+                    <a href = "about.html"               class = "nav_link active"> About Us </a>
+                    <a href = "index.html#team"          class = "nav_link"> Team </a>
+                    <a href = "index.html#activeTenders" class = "nav_link"> Active Tenders </a>
+                    <a href = "contact.html"             class = "nav_cta"> Contact Us </a>
+                </nav>
+                
+            </div>
+        </header>
         <!--header ends-->
 
-        <!--tender-->
-            <section class = "tender-page">
-                <div class = "container">
-                    <a href = "index.html#tenders" class = "back-btn"> Back </a>
-                    <h1 class = "page-title"> ROADS & HIGHWAYS TENDER </h1>
+        <!--tenders-->
+        <section class = "tender-page">
+            <div class = "container">
 
-                    <p>
+                <a href = "index.html#tenders" class = "back-btn"> Back to Tenders </a>
 
-                    The African roads and highways sector is a growing and evolving landscape. While significant progress has been made in improving road infrastructure, challenges remain, particularly in terms of road density and quality. A key focus is on enhancing connectivity to promote trade and economic growth. Major road transport corridors, such as the Northern Corridor, play a crucial role in connecting landlocked countries to ports and facilitating trade.
-
-                    <br/> <br/>
-
-                    The transport sector in Africa is projected to grow significantly, driven by infrastructure investments. Annual infrastructure investments are estimated to reach $150 billion to support this growth.
-
-                    <br/> <br/>
-
-                    <b> Public-Private Partnerships: </b> <br/>
-                    
-                    Involving private sector investment in road projects can help attract capital and expertise.
-
-                    <br/> <br/>
-
-                    Examples of Major Road Transport Corridors: <br/>
-                        •   <b> Northern Corridor: </b> Connects landlocked countries in East and Central Africa to the Port of Mombasa. <br/>
-                        •   <b> Central Corridor: </b> Another major corridor in East Africa. <br/>
-                        •   <b> Dar es Salaam (TAZARA) Corridor: </b> Connects Dar es Salaam to Zambia via rail and road
-
-                    <br/> <br/>
-
-                    Our group will leverage on its market experience and networks to find your business government contracts, procurement, roads and highway authorities tenders for roads highways, government roads highways tenders, global roads and highways tenders, road construction tenders, highway construction tenders, concrete construction tenders, road highway rfps, road highway projects.
-
-                    </p>
+                <!--hero-->
+                <div class = "tender-hero">
+                    <p class = "tender-hero-label"> Sector Overview </p>
+                    <h1 class = "page-title"> Roads & Highways Tender </h1>
                 </div>
-            </section>
+
+                <!--content cards-->
+                <div class = "tender-body">
+
+                    <div class = "tender-card">
+                        <div class = "tender-card-icon"> <i class = "fas fa-road"></i> </div>
+                        <h3> Sector Landscape</h3>
+                        <p>
+                            Africa's roads and highways sector is evolving rapidly. While significant progress has been made, challenges in road density and quality remain. The key focus is on enhancing connectivity to promote trade, reduce transit costs, and support broader economic growth across the continent.
+                        </p>
+                    </div>
+
+                    <div class = "tender-card">
+                        <div class = "tender-card-icon"> <i class = "fas fa-coins"></i> </div>
+                        <h3> Investment Scale </h3>
+                        <p>
+                            Annual infrastructure investments in Africa's transport sector are estimated to reach $150 billion, driven by governments, development banks, and private sector participants eager to close the infrastructure gap and unlock economic potential across the region.
+                        </p>
+                    </div>
+
+                    <div class = "tender-card">
+                        <div class = "tender-card-icon"> <i class = "fas fa-map-location-dot"></i> </div>
+                        <h3> Major Corridors </h3>
+                        <p>
+                            Key transport corridors drive regional trade and connectivity. The <strong>Northern Corridor</strong> connects landlocked East and Central African countries to the Port of Mombasa. The <strong>Central Corridor</strong> serves East Africa broadly, while the <strong>Dar es Salaam (TAZARA) Corridor</strong> links Dar es Salaam to Zambia via road and rail.
+                        </p>
+                    </div>
+
+                    <div class = "tender-card">
+                        <div class = "tender-card-icon"> <i class = "fas fa-handshake"></i> </div>
+                        <h3> Public-Private Partnerships </h3>
+                        <p>
+                            PPP models are increasingly central to road sector financing — attracting private capital, engineering expertise, and operational efficiency into projects that would otherwise face long public funding queues. We help businesses navigate PPP procurement structures across East Africa.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!--CTA-->
+                <div class = "tender-cta">
+                    <p>
+                        Contact us for the latest roads & highways tenders — <strong>road construction, highway projects, concrete works, corridor development, road authority RFPs</strong>, and related infrastructure procurement across East Africa.
+                    </p>
+                    <a href = "contact.html">
+                        <i class = "fas fa-paper-plane"></i>
+                        Get In Touch
+                    </a>
+                </div>
+
+            </div>
+        </section>
         <!--tender ends-->
 
         <!--footer-->
-            <section class = "footer">
-                <div class = "container">
-                    <div class = "footer-container">
-                        <div class = "footer-box">
-                            <h2 class = "footer-title"> LOCATE US </h2>
-
-                            <p> Afri Consult Tender Group House </p>
-                            <p> Riverside Drive, Nairobi </p>
-                            <p> P.O.Box 001200 - GPO Nairobi </p>
-                        </div>
-
-                        <div class = "footer-box">
-                            <h2 class = "footer-title"> CONTACT US </h2>
-
-                            <p> business@africonsulttendergroup.com </p>
-                            <p> tenders@africonsulttendergroup.com </p>
-                            <p> africonsult@gmail.com </p>
-                        </div>
-
-                        <div class = "footer-box">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8387528343537!2d36.79095937473643!3d-1.269659135607686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1744d1f496ef%3A0xa2a048835be09d59!2sRiverside%20Dr%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1753818464021!5m2!1sen!2ske" style="border:0; border-radius: 13px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+        <section class = "footer">
+            <div class = "container">
+                <div class = "footer-bottom">
+                    <p> &copy; Africonsult Tender Group, <span id = "year"></span> </p>
+              
+                    <div class = "footer-links">
+                        <a href = "index.html"> Home </a>
+                        <a href = "about.html"> About </a>
+                        <a href = "contact.html"> Contact </a>
                     </div>
-
-                    <a href = "javascript:void(0)" onclick = "scrollToTop()"> 
-                        <img src = "images/work/go-up.png" class = "go-up" alt = "go up" /> 
-                    </a>
-
-                    <hr />
-
-                    <footer>
-                        <p style = "margin-top: 10px"> &copy; AFRICONSULT TENDER GROUP , <span id = "year"></span> </p>
-                    </footer>
                 </div>
-            </section>
+            </div>
+        </section>
         <!--footer ends-->
 
+        <!--go-up button-->
+        <button class = "go-up" onclick = "scrollToTop()" aria-label = "Back to top">
+            <i class = "fas fa-arrow-up"></i>
+        </button> 
+
         <!--javascript-->
-            <script>
-                // Go up button reference
-                const goUpBtn = document.querySelector(".go-up");
-
-                // Show button when scrolled down 300px
-                window.addEventListener("scroll", () => 
-                {
-                    if (window.scrollY > 300) 
-                    {
-                        goUpBtn.style.display = "block";
-                    } 
-                    else 
-                    {
-                        goUpBtn.style.display = "none";
-                    }
-                });
-
-                // Script for go up button
-                function scrollToTop() 
-                {
-                    window.scrollTo
-                    ({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                }
-
-                // script to get to section
-                const smoothScrollLinks = document.querySelectorAll('.smooth-scroll[data-target]');
-
-                // script for year
-                document.getElementById("year").textContent = new Date().getFullYear();
-            </script>
+        <script src = "js/script.js"></script>
         <!--javascript ends-->
+
     </body>
 </html>
