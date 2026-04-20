@@ -11,537 +11,524 @@
         <link rel = "stylesheet" href = "css/style.css" />
 
         <!--font awesome for icons-->
-        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-        <!--google font-->
+        <!--google font, Inter-->
         <link rel = "preconnect" href = "https://fonts.googleapis.com" />
-        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
-        <link href = "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel = "stylesheet" />
+        <link rel = "preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href = "https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel = "stylesheet" />
     </head>
 
     <body>
         <!--header-->
-            <section class = "header">
-                <div class = "container">
-                    <header>
-                        <input type = "checkbox" id = "check">
-                        <label for = "check" class = "checkbtn">
-                            <i class = "fas fa-bars checkbtn-icon"></i>
-                        </label>
+        <header class = "header">
+            <div class = "container">
 
-                        <a href = "index.html">
-                            <div class = "logo">
-                                <img src = "images/logo-2.png" alt = "logo" />
-
-                                <div class = "logo-text">
-                                    <h1> ACT GROUP </h1>
-                                    <h1> CONSULTING </h1>
-                                </div>
-                            </div>
-                        </a>
-
-                        <div class = "navbar">
-                            <a href = "index.html"> HOME </a>
-                            <a href = "about.html"> ABOUT US </a>
-                            <a href = "index.html#team"> TEAM </a>
-                            <a href = "index.html#activeTenders"> ACTIVE TENDERS </a>
-                            <a href = "contact.html"> CONTACT US </a>
-                        </div>
-                    </header>
+                <!--hamburger-->
+                <input type = "checkbox" id = "check" />
+                <label for = "check" class = "checkbtn" aria-label = "Toggle navigation">
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                </label>
+                
+                <!--logo-->
+                <div class = "logo">
+                    <img src = "images/logo-2.png" alt = "ACT Group logo" />
+                    <a href = "index.html" class = "logo_wordmark">
+                        <span class = "logo_name"> ACT Group </span>
+                        <span class = "logo_sub"> Consulting </span>
+                    </a>
                 </div>
-            </section>
+
+                <!--menu-->
+                <nav class = "menu">
+                    <a href = "index.html"               class = "nav_link active"> Home </a>
+                    <a href = "about.html"               class = "nav_link"> About Us </a>
+                    <a href = "index.html#team"          class = "nav_link"> Team </a>
+                    <a href = "index.html#activeTenders" class = "nav_link"> Active Tenders </a>
+                    <a href = "contact.html"             class = "nav_cta"> Contact Us </a>
+                </nav>
+                
+            </div>
+        </header>
         <!--header ends-->
 
         <!--reviews-->
-            <section class = "reviews">
-                <div class = "container">
-                    <div class = "review-box">
-                        <span> 15+ </span>
-                        <span class = "review-text"> Consultants </span>
+        <section class = "reviews">
+              <div class = "container">
+                    <div class = "review_box">
+                        <span class = "review_number"> 15 <sup> + </sup> </span>
+                        <span class = "review_text"> Consultants </span>
                     </div>
 
-                    <div class = "review-box">
-                        <span> 20+ </span> 
-                        <span class = "review-text"> Successful Projects </span>
+                    <div class = "review_divider"></div>
+                
+                    <div class = "review_box">
+                        <span class = "review_number"> 20 <sup> + </sup> </span>
+                        <span class = "review_text"> Successful Projects </span>
                     </div>
-
-                    <div class = "review-box">
-                        <span> 265+ </span> 
-                        <span class = "review-text"> Satisfied Clients </span>
+                
+                    <div class = "review_divider"></div>
+                
+                    <div class = "review_box">
+                        <span class = "review_number"> 265 <sup> + </sup> </span>
+                        <span class = "review_text"> Satisfied Clients </span>
                     </div>
-                </div>
-            </section>
+              </div>
+        </section>
         <!--reviews end-->
 
         <!--services-->
-            <section class = "services">
-                <div class = "container">
-                    <h1 class = "section-title"> OUR SERVICES </h1>
+        <section class = "services">
+            <div class = "container">
+                <h2 class = "section-title"> Our Services </h2>
+                
+                <div class = "service-container">
 
-                    <div class = "service-container">
-                        <div class = "service-box">
-                            <img src = "images/work/service.png" />
-                            <p> Consulting & Procurement </p>
-                        </div>
-
-                        <div class = "service-box">
-                            <img src = "images/work/service.png" />
-                            <p> Identifying relevant tender opportunities </p>
-                        </div>
-
-                        <div class = "service-box">
-                            <img src = "images/work/service.png" />
-                            <p> Understanding tender requirements and specifications </p>
-                        </div>
-
-                        <div class = "service-box">
-                            <img src = "images/work/service.png" />
-                            <p> Preparing detailed and compliant tender proposals </p>
-                        </div>
-
-                        <div class = "service-box">
-                            <img src = "images/work/service.png" />
-                            <p> Developing winning tender strategies </p>
-                        </div>
-
-                        <div class = "service-box">
-                            <img src = "images/work/service.png" />
-                            <p> Facilitating negotiations and post-tender support </p>
-                        </div>
+                    <div class = "service-box">
+                        <span class = "service-icon"> <i class = "fas fa-arrow-right"></i> </span>
+                        <p> Consulting &amp; Procurement </p>
                     </div>
+
+                    <div class = "service-box">
+                        <span class = "service-icon"> <i class = "fas fa-arrow-right"></i> </span>
+                        <p> Identifying relevant tender opportunities </p>
+                    </div>
+
+                    <div class = "service-box">
+                        <span class = "service-icon"> <i class = "fas fa-arrow-right"></i> </span>
+                        <p> Understanding tender requirements and specifications </p>
+                    </div>
+
+                    <div class = "service-box">
+                        <span class = "service-icon"> <i class = "fas fa-arrow-right"></i> </span>
+                        <p> Preparing detailed and compliant tender proposals </p>
+                    </div>
+
+                    <div class = "service-box">
+                        <span class = "service-icon"> <i class = "fas fa-arrow-right"></i> </span>
+                        <p> Developing winning tender strategies </p>
+                    </div>
+
+                    <div class = "service-box">
+                        <span class = "service-icon"> <i class = "fas fa-arrow-right"></i> </span>
+                        <p> Facilitating negotiations and post-tender support </p>
+                    </div>
+
                 </div>
-            </section>
+            </div>
+        </section>
         <!--services end-->
 
         <!--tenders-->
-            <section class = "tenders" id = "tenders">
-                <div class = "container">
-                    <h1 class = "section-title"> POPULAR TENDERS </h1>
+        <section class = "tenders" id = "tenders">
+            <div class = "container">
+                <h1 class = "section-title"> POPULAR TENDERS </h1>
 
-                    <div class = "tender-container">
-                        <a href = "tender-defense.html">
-                            <div class = "tender-box">
-                                Defense Tender
-                            </div>
-                        </a>
+                <div class = "tender-container">
+                    <a href = "tender-defense.html">
+                        <div class = "tender-box">
+                            Defense Tender
+                        </div>
+                    </a>
 
-                        <a href = "tender-construction.html">
-                            <div class = "tender-box">
-                                Construction Tender
-                            </div>
-                        </a>
+                    <a href = "tender-construction.html">
+                        <div class = "tender-box">
+                            Construction Tender
+                        </div>
+                    </a>
 
-                        <a href = "tender-agricultural.html">
-                            <div class = "tender-box">
-                                Agricultural Tender
-                            </div>
-                        </a>
+                    <a href = "tender-agricultural.html">
+                        <div class = "tender-box">
+                            Agricultural Tender
+                        </div>
+                    </a>
 
-                        <a href = "tender-healthcare.html">
-                            <div class = "tender-box">
-                                Healthcare Equipment & Services Tender
-                            </div>
-                        </a>
+                    <a href = "tender-healthcare.html">
+                        <div class = "tender-box">
+                            Healthcare Equipment & Services Tender
+                        </div>
+                    </a>
 
-                        <a href = "tender-laboratory.html">
-                            <div class = "tender-box">
-                                Laboratory Equipment & Services Tender
-                            </div>
-                        </a>
+                    <a href = "tender-laboratory.html">
+                        <div class = "tender-box">
+                            Laboratory Equipment & Services Tender
+                        </div>
+                    </a>
 
-                        <a href = "tender-oil-and-gas.html">
-                            <div class = "tender-box">
-                                Oil & Gas Tender
-                            </div>
-                        </a>
+                    <a href = "tender-oil-and-gas.html">
+                        <div class = "tender-box">
+                            Oil & Gas Tender
+                        </div>
+                    </a>
 
-                        <a href = "tender-renewable-energy.html">
-                            <div class = "tender-box">
-                                Renewable Energy Tender
-                            </div>
-                        </a>
+                    <a href = "tender-renewable-energy.html">
+                        <div class = "tender-box">
+                            Renewable Energy Tender
+                        </div>
+                    </a>
 
-                        <a href = "tender-roads-and-highways.html">
-                            <div class = "tender-box">
-                                Roads & Highways Tender
-                            </div>
-                        </a>
+                    <a href = "tender-roads-and-highways.html">
+                        <div class = "tender-box">
+                            Roads & Highways Tender
+                        </div>
+                    </a>
 
-                        <a href = "tender-water-and-sanitation.html">
-                            <div class = "tender-box">
-                                Water & Sanitation Tender
-                            </div>
-                        </a>
+                    <a href = "tender-water-and-sanitation.html">
+                        <div class = "tender-box">
+                            Water & Sanitation Tender
+                        </div>
+                    </a>
 
-                        <a href = "tender-garbage-management.html">
-                            <div class = "tender-box">
-                                Garbage Management Tender
-                            </div>
-                        </a>
+                    <a href = "tender-garbage-management.html">
+                        <div class = "tender-box">
+                            Garbage Management Tender
+                        </div>
+                    </a>
 
-                        <a href = "tender-port-operation.html">
-                            <div class = "tender-box">
-                                Port Operation Tender
-                            </div>
-                        </a>
-                    </div>
+                    <a href = "tender-port-operation.html">
+                        <div class = "tender-box">
+                            Port Operation Tender
+                        </div>
+                    </a>
                 </div>
-            </section>
+            </div>
+        </section>
         <!--tenders end-->
 
         <!--categories-->
-            <section class = "categories">
-                <div class = "container">
-                    <h1 class = "section-title"> POPULAR CATEGORIES </h1>
+        <section class = "categories">
+            <div class = "container">
+                <h1 class = "section-title"> POPULAR CATEGORIES </h1>
 
-                    <div class = "category-container">
-                        <div class = "category-box">
-                            <img src = "images/categories/architecture-2.png" />
-                            <p> Architecture </p>
-                        </div>
+                <div class = "category-container">
+                    <div class = "category-box">
+                        <img src = "images/categories/architecture-2.png" />
+                        <p> Architecture </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/business-management-2.png" />
-                            <p> Business Management </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/business-management-2.png" />
+                        <p> Business Management </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/construction-2.png" />
-                            <p> Construction </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/construction-2.png" />
+                        <p> Construction </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/consultancy-2.png" />
-                            <p> Consultancy </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/consultancy-2.png" />
+                        <p> Consultancy </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/defense-2.png" />
-                            <p> Defense </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/defense-2.png" />
+                        <p> Defense </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/electrical-2.png" />
-                            <p> Electrical </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/electrical-2.png" />
+                        <p> Electrical </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/engineering-2.png" />
-                            <p> Engineering </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/engineering-2.png" />
+                        <p> Engineering </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/environment-and-pollution-2.png" />
-                            <p> Environment & Pollution </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/environment-and-pollution-2.png" />
+                        <p> Environment & Pollution </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/gps-2.png" />
-                            <p> GPS </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/gps-2.png" />
+                        <p> GPS </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/healthcare-2.png" />
-                            <p> Healthcare </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/healthcare-2.png" />
+                        <p> Healthcare </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/industrial-automation-2.png" />
-                            <p> Industrial Automation </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/industrial-automation-2.png" />
+                        <p> Industrial Automation </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/lab-equipment-2.png" />
-                            <p> Lab Equipment </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/lab-equipment-2.png" />
+                        <p> Lab Equipment </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/media-2.png" />
-                            <p> Media </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/media-2.png" />
+                        <p> Media </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/oil-and-gas-2.png" />
-                            <p> Oil & Gas </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/oil-and-gas-2.png" />
+                        <p> Oil & Gas </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/pharmaceuticals-2.png" />
-                            <p> Pharmaceuticals </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/pharmaceuticals-2.png" />
+                        <p> Pharmaceuticals </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/renewable-energy-2.png" />
-                            <p> Renewable Energy </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/renewable-energy-2.png" />
+                        <p> Renewable Energy </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/roads-and-highways-2.png" />
-                            <p> Roads & Highways </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/roads-and-highways-2.png" />
+                        <p> Roads & Highways </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/software-services-2.png" />
-                            <p> Software Services </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/software-services-2.png" />
+                        <p> Software Services </p>
+                    </div>
 
-                        
-                        <div class = "category-box">
-                            <img src = "images/categories/training-2.png" />
-                            <p> Training </p>
-                        </div>
+                    
+                    <div class = "category-box">
+                        <img src = "images/categories/training-2.png" />
+                        <p> Training </p>
+                    </div>
 
-                        <div class = "category-box">
-                            <img src = "images/categories/water-and-sanitation-2.png" />
-                            <p> Water & Sanitation </p>
-                        </div>
+                    <div class = "category-box">
+                        <img src = "images/categories/water-and-sanitation-2.png" />
+                        <p> Water & Sanitation </p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
         <!--categories end-->
 
         <!--east africa-->
-            <section class = "east-africa">
-                <div class = "container">
-                    <h1 class = "section-title"> EAST AFRICA (an overview) </h1>
+        <section class = "east-africa">
+            <div class = "container">
+                <h2 class = "section-title"> East Africa (an overview) </h2>
+                
+                <div class = "east-africa-body">
 
                     <p>
-
-                    The East African Community, an economic currently includes the Democratic Republic of the Congo, Somalia, Burundi, Kenya, Rwanda, South Sudan, Uganda and Tanzania. It has been the continent’s fastest-growing region in recent years.
-
-                    <br/> <br/>
-
-                    East Africa presents numerous opportunities for businesses across diverse sectors like agriculture, energy, technology, and tourism. The region boasts a large and increasingly mobile population, diverse natural resources, and a growing number of vibrant urban centers.
-
-                    <br/> <br/>
-
-                    The EAC is investing in infrastructure projects, including transportation, energy, and communication, to enhance regional competitiveness.
-
-                    <br/> <br/>
-
-                    East Africa has traditional resources including Mining; Fisheries; Tourism, and the recent addition of Vast Oil & Gas Reserves and Renewable Energy Solutions:  Green Hydrogen development, allied with substantial Solar and Wind capacity. It has significant potential for renewable energy, particularly solar and wind power.
-
-                    <br/> <br/>
-
-                    East Africa presents an excellent opportunity for investors, with a wide variety of profitable market sectors to explore.
-
-                    <br/> <br/>
-
-                    The 2024 Foreign Direct Investment (FDI) Report shows that East Africa increased by 35% to $8.2 billion.
-
-                    <br/> <br/>
-
-                    East Africa is a significant producer of essential metals and minerals like gold, diamonds, uranium, platinum, nickel, bauxite, and cobalt, which significantly contribute to the region's GDP.
-
-                    <br/> <br/>
-
-                    East Africa's manufacturing sector, notably in Kenya and Tanzania, is a vital industry producing a wide range of goods including textiles, leather, food, beverages, chemicals, pharmaceuticals, plastics, and metal products. Economic growth relies heavily on the energy sector, with investments in renewable energy sources like solar and wind power, and infrastructure development projects like the Standard Gauge Railway.
-
-                    <br/> <br/>
-
-                    Contact us to discuss how we can assist you through tender and bids procurement processes for projects in East African markets. -  tenders@africonsulttendergroup.com
-
+                        The East African Community currently includes the Democratic Republic of the Congo, Somalia, Burundi, Kenya, Rwanda, South Sudan, Uganda and Tanzania — the continent's fastest-growing region in recent years. It presents numerous opportunities across agriculture, energy, technology, and tourism, with a large mobile population, diverse natural resources, and vibrant urban centres.
                     </p>
+
+                    <p>
+                        The EAC is investing heavily in infrastructure — transportation, energy, and communications — to boost regional competitiveness. Traditional resources include Mining, Fisheries, and Tourism, with recent additions of <strong>vast Oil &amp; Gas Reserves</strong> and <strong>Renewable Energy</strong>: Green Hydrogen, Solar, and Wind capacity.
+                    </p>
+
+                    <p>
+                        East Africa is a significant producer of gold, diamonds, uranium, platinum, nickel, bauxite, and cobalt. The <strong>2024 FDI Report</strong> shows the region attracted <strong>$8.2 billion</strong> — a 35% increase — reflecting strong investor confidence.
+                    </p>
+
+                    <p>
+                        Kenya and Tanzania lead a manufacturing sector producing textiles, leather, food, beverages, chemicals, pharmaceuticals, and metal products. The Standard Gauge Railway and renewable energy investments underpin continued economic growth.
+                    </p>
+
+                    <div class = "east-africa-cta">
+                        <i class = "fas fa-envelope"></i>
+                        <span> Discuss procurement opportunities in East African markets — </span>
+                        <a href = "mailto:tenders@africonsulttendergroup.com"> tenders@africonsulttendergroup.com </a>
+                    </div>
+
                 </div>
-            </section>
+            </div>
+        </section>
         <!--east africa ends-->
 
         <!--meet the team-->
-            <section class = "team" id = "team">
-                <div class = "container">
-                    <h1 class = "section-title"> MEET THE TEAM </h1>
+        <section class = "team" id = "team">
+            <div class = "container">
+                <h1 class = "section-title"> MEET THE TEAM </h1>
 
-                    <div class = "team-container">
-                        <div class = "team-box">
-                            <div class = "team-box-img"> <img src = "images/pseudo-img.jpg" /> </div>
-                            <!--<img src = "https://i.ibb.co/DjMNzWp/team-ceo.png" />-->
-    
-                            <div class = "team-box-desc">
-                                <p class = "member-name"> Mbatha Mbaluka Patrick </p>
-                                <p class = "member-title"> CEO / COO </p>
-                                <p class = "member-email"> ceo@africonsulttendergroup.com </p>
-                            </div>
+                <div class = "team-container">
+                    <div class = "team-box">
+                        <div class = "team-box-img"> <img src = "images/pseudo-img.jpg" /> </div>
+                        <!--<img src = "https://i.ibb.co/DjMNzWp/team-ceo.png" />-->
+
+                        <div class = "team-box-desc">
+                            <p class = "member-name"> Mbatha Mbaluka Patrick </p>
+                            <p class = "member-title"> CEO / COO </p>
+                            <p class = "member-email"> ceo@africonsulttendergroup.com </p>
                         </div>
+                    </div>
 
-                        <div class = "team-box">
-                            <div class = "team-box-img"> <img src = "images/pseudo-img.jpg" /> </div>
+                    <div class = "team-box">
+                        <div class = "team-box-img"> <img src = "images/pseudo-img.jpg" /> </div>
 
-                            <div class = "team-box-desc">
-                                <p class = "member-name"> Marcus Mushati </p>
-                                <p class = "member-title"> Lead Consultant </p>
-                                <p class = "member-email"> tenders@africonsulttendergroup.com </p>
-                            </div>
+                        <div class = "team-box-desc">
+                            <p class = "member-name"> Marcus Mushati </p>
+                            <p class = "member-title"> Lead Consultant </p>
+                            <p class = "member-email"> tenders@africonsulttendergroup.com </p>
                         </div>
+                    </div>
 
-                        <div class = "team-box">
-                            <div class = "team-box-img"> <img src = "images/team/team-finance.jpg" /> </div>
+                    <div class = "team-box">
+                        <div class = "team-box-img"> <img src = "images/team/team-finance.jpg" /> </div>
 
-                            <div class = "team-box-desc">
-                                <p class = "member-name"> Martha Simiyu </p>
-                                <p class = "member-title"> Admin & Finance </p>
-                                <p class = "member-email"> admin@africonsulttendergroup.com </p>
-                            </div>
+                        <div class = "team-box-desc">
+                            <p class = "member-name"> Martha Simiyu </p>
+                            <p class = "member-title"> Admin & Finance </p>
+                            <p class = "member-email"> admin@africonsulttendergroup.com </p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
         <!--meet the team ends-->
 
         <!--active tenders-->
-            <section class = "active-tenders" id = "activeTenders">
-                <div class = "container">
-                    <h1 class = "section-title"> ACTIVE TENDERS </h1>
+        <section class = "active-tenders" id = "activeTenders">
+            <div class = "container">
+                <h1 class = "section-title"> ACTIVE TENDERS </h1>
 
-                    <div class = "active-tender-container">
-                        <div class = "active-tender-box">
-                            <h2 class = "active-title"> The Kisumu International Convention Centre (KICC) </h2>
+                <div class = "active-tender-container">
+                    <div class = "active-tender-box">
+                        <h2 class = "active-title"> The Kisumu International Convention Centre (KICC) </h2>
 
-                            <p>
-                            
-                            Kenya currently boasts only one purpose-built conference center, the Kenyatta International Conference Centre in Nairobi.
+                        <p>
+                        
+                        Kenya currently boasts only one purpose-built conference center, the Kenyatta International Conference Centre in Nairobi.
 
-                            <br/> <br/>
+                        <br/> <br/>
 
-                            Recognizing the potential of Kisumu as a hub for business and tourism, the need for a second purpose-built convention center has emerged. 
+                        Recognizing the potential of Kisumu as a hub for business and tourism, the need for a second purpose-built convention center has emerged. 
 
-                            <br/> <br/>
+                        <br/> <br/>
 
-                            The Kisumu International Convention Centre (KICC) is proposed to attract conferences, revitalize the local economy, and position Kisumu as a year-round destination.
+                        The Kisumu International Convention Centre (KICC) is proposed to attract conferences, revitalize the local economy, and position Kisumu as a year-round destination.
 
-                            </p>
-                        </div>
+                        </p>
+                    </div>
 
-                        <div class = "active-tender-box">
-                            <h2 class = "active-title"> Kenya Off-Grid Solar Access Project (KOSAP) </h2>
+                    <div class = "active-tender-box">
+                        <h2 class = "active-title"> Kenya Off-Grid Solar Access Project (KOSAP) </h2>
 
-                            <p>
-                            
-                            Kenya's energy revolution will be significantly expanded with the establishment of 113 mini-grids in 14 counties through a Ksh.10 billion (USD $77.38 million) initiative. The beneficiary counties are Garissa, Isiolo, Kilifi, Kwale, Lamu, Mandera, Marsabit, Narok, Samburu, Taita Taveta, Tana River, Turkana, Wajir, and West Pokot.
+                        <p>
+                        
+                        Kenya's energy revolution will be significantly expanded with the establishment of 113 mini-grids in 14 counties through a Ksh.10 billion (USD $77.38 million) initiative. The beneficiary counties are Garissa, Isiolo, Kilifi, Kwale, Lamu, Mandera, Marsabit, Narok, Samburu, Taita Taveta, Tana River, Turkana, Wajir, and West Pokot.
 
-                            <br/> <br/>
+                        <br/> <br/>
 
-                            The government is working with the <b> African Development Bank </b> and the <b> World Bank </b> to carry out the project. 
+                        The government is working with the <b> African Development Bank </b> and the <b> World Bank </b> to carry out the project. 
 
-                            <br/> <br/>
+                        <br/> <br/>
 
-                            The project will involve construction of 113 mini solar grids over the next 12 months. Additionally, diesel-powered stations are being hybridized with solar PV systems, with plans underway to install an extra 8MW of solar power in Wajir County.
+                        The project will involve construction of 113 mini solar grids over the next 12 months. Additionally, diesel-powered stations are being hybridized with solar PV systems, with plans underway to install an extra 8MW of solar power in Wajir County.
 
-                            </p>
-                        </div>
+                        </p>
+                    </div>
 
-                        <div class = "active-tender-box">
-                            <h2 class = "active-title"> 50MW Kajiado Solar PV Project  </h2>
+                    <div class = "active-tender-box">
+                        <h2 class = "active-title"> 50MW Kajiado Solar PV Project  </h2>
 
-                            <p>
-                            
-                            The Kajiado Solar Plant aims to be largest grid connected solar power plant in East & Central Africa.  Scope of works include the following; 
+                        <p>
+                        
+                        The Kajiado Solar Plant aims to be largest grid connected solar power plant in East & Central Africa.  Scope of works include the following; 
 
-                            </p>
+                        </p>
 
-                            <ol>
-                                <li> Construction of a 132KV bay at 132/33/11KV Ketraco Substation linking to the 132KV Bus bars. </li>
-                                <li> Construction of 5.7 km of 132KV transmission line with 16No. pylons (Towers) from the Solar Plant to Ketraco Substation. </li>
-                                <li> Establish a 33/132 KV substation at the Solar Plant with a 50 MVA 33/132KV step up transformer. </li>
-                                <li> Establish a 50 MVA (Installed capacity is 54.65MW) solar generation plant generation complete, with Solar panels, step up transformers -33no x 0.415/33kV transformers , indoor 33kV switch room and control room for monitoring, including CCTV installations for monitoring. </li>
-                            </ol>
+                        <ol>
+                            <li> Construction of a 132KV bay at 132/33/11KV Ketraco Substation linking to the 132KV Bus bars. </li>
+                            <li> Construction of 5.7 km of 132KV transmission line with 16No. pylons (Towers) from the Solar Plant to Ketraco Substation. </li>
+                            <li> Establish a 33/132 KV substation at the Solar Plant with a 50 MVA 33/132KV step up transformer. </li>
+                            <li> Establish a 50 MVA (Installed capacity is 54.65MW) solar generation plant generation complete, with Solar panels, step up transformers -33no x 0.415/33kV transformers , indoor 33kV switch room and control room for monitoring, including CCTV installations for monitoring. </li>
+                        </ol>
 
-                            <p>
+                        <p>
 
-                            The project will involve implementation of a 50MW grid based solar power generation plant whereby all the generated power is to be sold to Kenya Power through a Power Purchase Agreement (PPA). To support the project, a 6 Kilometre 132 Kilo Vault (KV) power transmission line has been constructed between the REREC solar power plant and the Kenya Electricity Transmission Company (KETRACO) sub-station in Garissa to feed the power into the national power grid.
+                        The project will involve implementation of a 50MW grid based solar power generation plant whereby all the generated power is to be sold to Kenya Power through a Power Purchase Agreement (PPA). To support the project, a 6 Kilometre 132 Kilo Vault (KV) power transmission line has been constructed between the REREC solar power plant and the Kenya Electricity Transmission Company (KETRACO) sub-station in Garissa to feed the power into the national power grid.
 
-                            </p>
-                        </div>
+                        </p>
+                    </div>
 
-                        <div class = "active-tender-box">
-                            <h2 class = "active-title"> Affordable Housing  </h2>
+                    <div class = "active-tender-box">
+                        <h2 class = "active-title"> Affordable Housing  </h2>
 
-                            <p>
-                            
-                            The Kenyan government's Affordable Housing Program (AHP) aims to provide decent and affordable housing to low and middle-income households.
+                        <p>
+                        
+                        The Kenyan government's Affordable Housing Program (AHP) aims to provide decent and affordable housing to low and middle-income households.
 
-                            <br/> <br/>
+                        <br/> <br/>
 
-                            Several private developers are involved in affordable housing in Nairobi and other parts of Kenya. Our client <b> Mtwapa Investments Limited </b> aims to put up A 220-unit affordable housing project in Mombasa County. Contractors with past experience of Affordable Housing Program ( AHP ) invited to submit their bids.
+                        Several private developers are involved in affordable housing in Nairobi and other parts of Kenya. Our client <b> Mtwapa Investments Limited </b> aims to put up A 220-unit affordable housing project in Mombasa County. Contractors with past experience of Affordable Housing Program ( AHP ) invited to submit their bids.
 
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
         <!--active tenders end-->
 
-        <!--footer-->
-            <section class = "footer">
-                <div class = "container">
-                    <div class = "footer-container">
-                        <div class = "footer-box">
-                            <h2 class = "footer-title"> LOCATE US </h2>
-
-                            <p> Afri Consult Tender Group House </p>
-                            <p> Riverside Drive, Nairobi </p>
-                            <p> P.O.Box 001200 - GPO Nairobi </p>
+        <!--location-->
+        <section class = "location">
+            <div class = "container">
+                <h2 class = "section-title"> Find Us </h2>
+                
+                <div class = "location-container">
+                    <div class = "location-info">
+                        <div class = "location-item">
+                            <i class = "fas fa-building"></i>
+                            
+                            <div>
+                                <p class = "location-label"> Address </p>
+                                <p> 
+                                    Afri Consult Tender Group House <br/> Riverside Drive, Nairobi <br/> P.O.Box 001200 - GPO Nairobi
+                                </p>
+                            </div>
                         </div>
 
-                        <div class = "footer-box">
-                            <h2 class = "footer-title"> CONTACT US </h2>
-
-                            <p> business@africonsulttendergroup.com </p>
-                            <p> tenders@africonsulttendergroup.com </p>
-                            <p> africonsult@gmail.com </p>
-                        </div>
-
-                        <div class = "footer-box">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8387528343537!2d36.79095937473643!3d-1.269659135607686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1744d1f496ef%3A0xa2a048835be09d59!2sRiverside%20Dr%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1753818464021!5m2!1sen!2ske" style="border:0; border-radius: 13px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="location-item">
+                            <i class = "fas fa-envelope"></i>
+                            
+                            <div>
+                                <p class="location-label">Email</p>
+                                <p>business@africonsulttendergroup.com</p>
+                                <p>tenders@africonsulttendergroup.com</p>
+                            </div>
                         </div>
                     </div>
 
-                    <a href = "javascript:void(0)" onclick = "scrollToTop()"> 
-                        <img src = "images/work/go-up.png" class = "go-up" alt = "go up" /> 
-                    </a>
+                    <iframe     src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8387528343537!2d36.79095937473643!3d-1.269659135607686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1744d1f496ef%3A0xa2a048835be09d59!2sRiverside%20Dr%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1753818464021!5m2!1sen!2ske" 
+                                allowfullscreen = "" 
+                                loading = "lazy" 
+                                referrerpolicy = "no-referrer-when-downgrade"></iframe>
 
-                    <hr />
-
-                    <footer>
-                        <p style = "margin-top: 10px"> &copy; AFRICONSULT TENDER GROUP , <span id = "year"></span> </p>
-                    </footer>
                 </div>
-            </section>
+            </div>
+        </section>
+        <!--location ends-->
+
+        <!--footer-->
+        <section class = "footer">
+            <div class = "container">
+                <div class = "footer-bottom">
+                    <p> &copy; Africonsult Tender Group, <span id = "year"></span> </p>
+              
+                    <div class = "footer-links">
+                        <a href = "index.html"> Home </a>
+                        <a href = "about.html"> About </a>
+                        <a href = "contact.html"> Contact </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--footer ends-->
 
+        <!--go-up button-->
+        <button class = "go-up" onclick = "scrollToTop()" aria-label = "Back to top">
+            <i class = "fas fa-arrow-up"></i>
+        </button> 
+
         <!--javascript-->
-            <script>
-                // Go up button reference
-                const goUpBtn = document.querySelector(".go-up");
-
-                // Show button when scrolled down 300px
-                window.addEventListener("scroll", () => 
-                {
-                    if (window.scrollY > 300) 
-                    {
-                        goUpBtn.style.display = "block";
-                    } 
-                    else 
-                    {
-                        goUpBtn.style.display = "none";
-                    }
-                });
-
-                // Script for go up button
-                function scrollToTop() 
-                {
-                    window.scrollTo
-                    ({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                }
-
-                // script to get to section
-                const smoothScrollLinks = document.querySelectorAll('.smooth-scroll[data-target]');
-
-                // script for year
-                document.getElementById("year").textContent = new Date().getFullYear();
-            </script>
+        <script src = "js/script.js"></script>
         <!--javascript ends-->
+
     </body>
 </html>
